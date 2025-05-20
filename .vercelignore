@@ -1,0 +1,23 @@
+# Ignore ESLint configuration files
+.eslintrc*
+.eslintignore
+eslint.config.*
+
+# Ignore test files
+**/*.test.js
+**/*.spec.js
+**/__tests__/
+
+# Ignore development files
+.vscode/
+.idea/
+.git/
+.github/
+
+# Ignore environment files (already handled by default, but adding for clarity)
+.env*
+
+# Ignore other unnecessary files
+README.md
+LICENSE
+*.log
