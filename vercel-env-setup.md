@@ -23,7 +23,7 @@ In the left sidebar, click on "Environment Variables".
 Add each of these environment variables one by one:
 
 1. **Variable Name**: `MONGODB_URI`  
-   **Value**: `mongodb+srv://mongouser:root%40123@cluster0.q8xi6kc.mongodb.net/register?retryWrites=true&w=majority&appName=Cluster0`
+   **Value**: `mongodb+srv://mongouser:root%40123@cluster0.q8xi6kc.mongodb.net/task?retryWrites=true&w=majority&appName=Cluster0`
 
 2. **Variable Name**: `MONGODB_DB_NAME`  
    **Value**: `task`
