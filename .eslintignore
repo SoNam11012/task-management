@@ -15,7 +15,9 @@ public/
 
 # Environment files
 .env*
-src/.env*
+.env.local
+.env.development
+.env.production
 
 # Specific file types you want to ignore
 *.min.js
@@ -29,12 +31,15 @@ src/.env*
 # Any specific files or directories you want to ignore
 src/lib/db.js
 src/lib/auth.js
-src/app/api/**/*
+src/app/api/**/*.js
+src/middleware.js
 
 # Vercel
 .vercel
 
-# Temporary files
-*.log
-.DS_Store
+# Next.js specific
+next.config.*
+
+# Package files
+package-lock.json
 
