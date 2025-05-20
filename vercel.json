@@ -1,14 +1,4 @@
 {
-  "version": 2,
   "framework": "nextjs",
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/next"
-    }
-  ],
-  "env": {
-    "NEXT_DISABLE_ESLINT": "1",
-    "DISABLE_ESLINT_PLUGIN": "true"
-  }
+  "version": 2
 }
