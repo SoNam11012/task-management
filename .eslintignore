@@ -1,0 +1,31 @@
+# Build and output directories
+.next/
+out/
+build/
+dist/
+
+# Node modules
+node_modules/
+
+# Public assets
+public/
+
+# Cache directories
+.cache/
+
+# Environment files
+.env*
+
+# Specific file types you want to ignore
+*.min.js
+*.d.ts
+
+# Test files
+**/*.test.js
+**/*.spec.js
+**/__tests__/
+
+# Any specific files or directories you want to ignore
+src/lib/db.js
+src/lib/auth.js
+# Add more specific files here if needed
