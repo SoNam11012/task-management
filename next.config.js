@@ -13,7 +13,6 @@ const nextConfig = {
   },
   // Other config options
   reactStrictMode: true,
-  swcMinify: true,
 };
 
 module.exports = nextConfig;
