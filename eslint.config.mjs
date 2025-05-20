@@ -18,18 +18,10 @@ const eslintConfig = [
     ignores: [
       // Add files or directories you want to completely ignore
       '**/*.test.js',
-      '**/*.spec.js',
       'node_modules/**',
       '.next/**',
-      'out/**',
       'public/**',
-      '.vercel/**',
-      'src/lib/db.js',
-      'src/lib/auth.js',
-      'src/app/api/**',
-      // Environment files
-      '.env*',
-      'src/.env*',
+      // Add any other patterns you want to ignore
     ],
     rules: {
       // Disable rules that are causing problems
@@ -37,7 +29,8 @@ const eslintConfig = [
       'react/prop-types': 'off',
       'react/react-in-jsx-scope': 'off',
       'react-hooks/exhaustive-deps': 'warn', // Downgrade from error to warning
-      'no-unused-vars': 'warn', // Downgrade from error to warning
+      'no-unused-vars': 'off', // Turn off completely
+      '@typescript-eslint/no-unused-vars': 'off', // Turn off completely
       '@next/next/no-img-element': 'off',
       // Add more rules to disable as needed
     },

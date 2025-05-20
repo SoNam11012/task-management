@@ -85,7 +85,7 @@ export async function GET() {
       ...task,
       _id: task._id.toString()
     })));
-  } catch (error) {
+  } catch (_) {
     return NextResponse.json(
       { error: 'Failed to fetch tasks' },
       { status: 500 }
@@ -116,7 +116,7 @@ export async function POST(request) {
       { _id: result.insertedId.toString() },
       { status: 201 }
     );
-  } catch (error) {
+  } catch (_) {
     return NextResponse.json(
       { error: 'Failed to create task' },
       { status: 500 }

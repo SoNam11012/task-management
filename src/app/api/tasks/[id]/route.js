@@ -132,7 +132,7 @@ export async function GET(request, { params }) {
       ...task,
       _id: task._id.toString()
     });
-  } catch (error) {
+  } catch (_) {
     return NextResponse.json(
       { error: 'Failed to fetch task' },
       { status: 500 }
@@ -173,7 +173,7 @@ export async function PUT(request, { params }) {
     }
 
     return NextResponse.json({ success: true });
-  } catch (error) {
+  } catch (_) {
     return NextResponse.json(
       { error: 'Failed to update task' },
       { status: 500 }
@@ -201,7 +201,7 @@ export async function DELETE(request, { params }) {
     }
 
     return NextResponse.json({ success: true });
-  } catch (error) {
+  } catch (_) {
     return NextResponse.json(
       { error: 'Failed to delete task' },
       { status: 500 }
