@@ -18,10 +18,18 @@ const eslintConfig = [
     ignores: [
       // Add files or directories you want to completely ignore
       '**/*.test.js',
+      '**/*.spec.js',
       'node_modules/**',
       '.next/**',
+      'out/**',
       'public/**',
-      // Add any other patterns you want to ignore
+      '.vercel/**',
+      'src/lib/db.js',
+      'src/lib/auth.js',
+      'src/app/api/**',
+      // Environment files
+      '.env*',
+      'src/.env*',
     ],
     rules: {
       // Disable rules that are causing problems

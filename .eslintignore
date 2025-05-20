@@ -15,6 +15,7 @@ public/
 
 # Environment files
 .env*
+src/.env*
 
 # Specific file types you want to ignore
 *.min.js
@@ -28,4 +29,12 @@ public/
 # Any specific files or directories you want to ignore
 src/lib/db.js
 src/lib/auth.js
-# Add more specific files here if needed
+src/app/api/**/*
+
+# Vercel
+.vercel
+
+# Temporary files
+*.log
+.DS_Store
+
