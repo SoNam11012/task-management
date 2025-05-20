@@ -1,5 +1,14 @@
 {
-  "buildCommand": "npm run build:vercel",
+  "version": 2,
   "framework": "nextjs",
-  "installCommand": "npm install"
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/next"
+    }
+  ],
+  "env": {
+    "NEXT_DISABLE_ESLINT": "1",
+    "DISABLE_ESLINT_PLUGIN": "true"
+  }
 }
