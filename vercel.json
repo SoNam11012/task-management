@@ -1,0 +1,9 @@
+{
+  "buildCommand": "npm run build:vercel",
+  "framework": "nextjs",
+  "installCommand": "npm install",
+  "buildEnvironment": {
+    "NEXT_DISABLE_ESLINT": "1",
+    "NEXT_TELEMETRY_DISABLED": "1"
+  }
+}
